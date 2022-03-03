@@ -1,0 +1,10 @@
+version: "3"
+services:
+    postgres-nanoblog:
+        image: postgres-nanoblog
+        container_name: postgres-nanoblog
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=test1234
